@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0D1117"
+    android:padding="32dp">
+
+    <!-- Icon Kunci -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔒"
+        android:textSize="72sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Label Status -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MODE FOKUS AKTIF"
+        android:textSize="13sp"
+        android:textColor="#58A6FF"
+        android:textStyle="bold"
+        android:letterSpacing="0.15"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Timer Countdown -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:00:00"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="8dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="#58A6FF"
+        android:progressBackgroundTint="#21262D"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Pesan Motivasi -->
+    <TextView
+        android:id="@+id/tvMotivation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎯 Fokus! Kamu baru mulai."
+        android:textSize="16sp"
+        android:textColor="#C9D1D9"
+        android:gravity="center"
+        android:layout_marginBottom="64dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#21262D"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Tombol Darurat -->
+    <Button
+        android:id="@+id/btnEmergency"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:text="⚠️  Darurat (Tahan 5 Detik)"
+        android:textSize="13sp"
+        android:textColor="#F85149"
+        android:backgroundTint="#21262D"
+        android:stateListAnimator="@null"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Hint tombol darurat -->
+    <TextView
+        android:id="@+id/tvEmergencyHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hanya untuk keperluan darurat"
+        android:textSize="11sp"
+        android:textColor="#8B949E"
+        android:gravity="center" />
+
+</LinearLayout>
